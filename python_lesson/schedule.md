@@ -145,25 +145,27 @@ Questions during session:
 a. _When would you use assert and when a conditional statement?_
 Assert is used to verify the correct usage and executation of your code. Conditional statements are used to handle choices as part of the code functionality.
 
-15:05: **SKIPPED DUE TO LACK OF TIME!** Debugging (20 minutes teaching + 5 minutes exercise)
+15:05: **SKIPPED DUE TO LACK OF TIME!**  
+
 - [Lesson 11](https://swcarpentry.github.io/python-novice-inflammation/11-debugging/index.html)
+  _Debugging (20 minutes teaching + 5 minutes exercise)_
+
 
 Exercises:
 - Plenum: [Not Supposed to be the Same](https://swcarpentry.github.io/python-novice-inflammation/11-debugging/index.html#not-supposed-to-be-the-same )
 
 15:30: Coffee Break II
 
-
 15:45: Command-Line Programs (45 min)
-- For isntructors: Use [history terminal](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md)
+- For instructors: Use a [history terminal](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md)
 - [Lesson 12](https://swcarpentry.github.io/python-novice-inflammation/12-cmdline/index.html)
 
 16:30: Breakout Session 2 (30 min)
 - [Exercise 9, 10 and (optional) 11](python_exercises_2.slides.html)
 Solutions are already present in the code folder (use code/reading_06.py as starting point):
-Solution exercise 9: `code/reading_08.py`
-Solution exercise 10: `code/reading_09.py`
-Solution exercise 11: `code/my_ls.py`
+Solution exercise 9: `code/reading_08.py`  
+Solution exercise 10: `code/reading_09.py`  
+Solution exercise 11: `code/my_ls.py`  
 
 16:50 - Wrap up, Questions, etc.
 17:00 - End
