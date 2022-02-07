@@ -1,1 +1,1 @@
-# software_carpentries
+# Software Carpentry isntructore materials
