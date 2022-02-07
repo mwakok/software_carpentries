@@ -1,1 +1,1 @@
-# Software Carpentry isntructore materials
+# Software Carpentry instructor materials
