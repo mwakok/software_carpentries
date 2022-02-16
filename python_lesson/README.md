@@ -79,10 +79,10 @@ $ jupyter --version
 12:30 - Welcome and instructions of the day @ Paula
 - Reminder Code of Conduct/How to get help. 
 - Programme of the day
-- Ice breaker
+- Ice breaker   
 
-12:40 - Recap of Day 2 (5 minutes)
-12:45 - Making Choices (20 minutes teaching + 5 minutes exercise)
+12:40 - Recap of Day 2 (5 minutes)   
+12:45 - Making Choices (20 minutes teaching + 5 minutes exercise)   
 - [Lesson 7](https://swcarpentry.github.io/python-novice-inflammation/07-cond/index.html)
 
 **Plenary Exercises:**
