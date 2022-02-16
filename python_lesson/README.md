@@ -162,7 +162,7 @@ Exercises:
 
 16:30: Breakout Session 2 (30 min)
 - [Exercise 9, 10 and (optional) 11](python_exercises_2.slides.html)
-Solutions are already present in the code folder (use code/reading_06.py as starting point):
+Solutions are already present in the code folder (use code/reading_06.py as starting point):   
 Solution exercise 9: `code/reading_08.py`  
 Solution exercise 10: `code/reading_09.py`  
 Solution exercise 11: `code/my_ls.py`  
