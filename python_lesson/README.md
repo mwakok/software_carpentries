@@ -167,6 +167,6 @@ Solution exercise 9: `code/reading_08.py`
 Solution exercise 10: `code/reading_09.py`  
 Solution exercise 11: `code/my_ls.py`  
 
-16:50 - Wrap up, Questions, etc.
-17:00 - End
-17:00 - Sharing Feedback Instructors/Helpers
+16:50 - Wrap up, Questions, etc.   
+17:00 - End   
+17:00 - Sharing Feedback Instructors/Helpers   
