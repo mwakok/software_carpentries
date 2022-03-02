@@ -3,8 +3,7 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 ## Content
-Collection of materials to host a 
-
+Collection of materials to host a Software Carpentries workshop. These materials are adaptations from the lessons provided by the [Software Carpentry](https://software-carpentry.org/lessons/)
 
 ## Workshops
 
