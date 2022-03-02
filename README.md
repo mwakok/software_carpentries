@@ -9,6 +9,7 @@ Collection of materials to host a Software Carpentries workshop. These materials
 
 ### 2021-11-15 
 
+- Workshop [homepage](https://4turesearchdata-carpentries.github.io/2021-11-15-tudelft-online/)
 - [Python lesson plan](/lesson_plans/2021_11_15_Python.md)
 - [Status of repository at time of workshop](https://github.com/mwakok/software_carpentries/tree/0.0.1)
 
