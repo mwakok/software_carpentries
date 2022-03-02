@@ -25,7 +25,7 @@ For online teaching, I use the following tools
 
 - For plenary exercises, I use [polls for Zoom](https://www.howtogeek.com/674907/how-to-create-polls-in-zoom-meetings/)
 
-- To control my webcam background, I pipe a virtual webcam from [XSplit VCam](https://www.xsplit.com/vcam) into [OBS](https://obsproject.com/), ensuring consistent backgrounds accross various online meeting programs (Teams, Zoom, Skype) 
+- To control my webcam background, I pipe a virtual webcam from [XSplit VCam](https://www.xsplit.com/vcam) into [OBS](https://obsproject.com/), ensuring consistent backgrounds across various online meeting programs (Teams, Zoom, Skype) 
 
 ## License
 
