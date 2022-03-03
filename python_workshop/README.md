@@ -1,6 +1,6 @@
 # Workshop notebooks
 
-These materials are generated during hands-on coding during the two workshop days. The hands-on coding thus starts with an empty notebook.
+These materials are generated during the hands-on coding sessions over the two workshop days. The hands-on coding thus starts with an empty notebook.
 
 All simple examples that explain core concepts are writting in `python_part_1.ipynb` and `python_part_2.ipynb` for each day respectively.
 
