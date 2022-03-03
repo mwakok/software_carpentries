@@ -1,6 +1,6 @@
 # Workshop notebooks
 
-These materials are generated during the hands-on coding sessions over the two workshop days. The participants will need to download teh following files:
+These materials are generated during the hands-on coding sessions over the two workshop days. The participants will need to download the following files beforehand:
 
 - The contents of the `data/` folder can be found here: https://swcarpentry.github.io/python-novice-inflammation/data/python-novice-inflammation-data.zip
 - The contents of the `code/` folder can be found here: https://swcarpentry.github.io/python-novice-inflammation/code/python-novice-inflammation-code.zip
