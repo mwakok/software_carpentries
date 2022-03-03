@@ -1,6 +1,6 @@
 # Instructor materials
 
-The instructor materials consist of two lectures and two exercise notebooks. The html slides are generated from the jupyter notebooks by executing the notebook (see last cell in each notebook). GitHub cannot not render the html slides, so I have created links to https://raw.githack.com/ to display them. You can also download the files and display them in your own browser
+The instructor materials consist of two lectures and two exercise notebooks. The html slides are generated from the jupyter notebooks by executing the notebook (see last cell in each notebook). GitHub cannot not render the html slides, so I have created links to https://raw.githack.com/ to display them (see below). Alternatively, you can also download the files and display them in your own browser.
 
 ## Lecture slides
 The lectures are used in between teaching modules to introduce concepts and repeat key lessons.  
