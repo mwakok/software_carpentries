@@ -5,6 +5,9 @@
 ## Content
 Collection of materials to host a Software Carpentries workshop. These materials are adaptations from the lessons provided by the [Software Carpentry](https://software-carpentry.org/lessons/)
 
+## Contributions
+Feel free to use these materials and I welcome any feedback (mistakes, suggestions) in the form of an issue.
+
 ## Workshops
 
 ### 2021-11-15 
