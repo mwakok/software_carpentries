@@ -8,7 +8,7 @@ The lectures are used in between teaching modules to introduce concepts and repe
 - [Lecture notes Day 2](https://raw.githack.com/mwakok/software_carpentries/main/python_instructor_materials/python_lecture_2.slides.html#/)
 
 ## Exercise slides  
-The exercise notebook contain answers and are (currently) not designed for self-paced learning.  
+The exercise notebook contain answers and are (currently) not designed for self-paced learning. They are designed to be introduced and guided by an exercise leader.
 - [Exercises Day 1](https://raw.githack.com/mwakok/software_carpentries/main/python_instructor_materials/python_exercises_1.slides.html#/)
 - [Exercises Day 2](https://raw.githack.com/mwakok/software_carpentries/main/python_instructor_materials/python_exercises_2.slides.html#/)
 
