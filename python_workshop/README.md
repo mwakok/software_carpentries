@@ -1,7 +1,10 @@
 # Workshop notebooks
 
-These materials are generated during the hands-on coding sessions over the two workshop days. The hands-on coding thus starts with an empty notebook.
+These materials are generated during the hands-on coding sessions over the two workshop days. The participants will need to download teh following files:
 
-All simple examples that explain core concepts are writting in `python_part_1.ipynb` and `python_part_2.ipynb` for each day respectively.
+- The contents of the `data/` folder can be found here: https://swcarpentry.github.io/python-novice-inflammation/data/python-novice-inflammation-data.zip
+- The contents of the `code/` folder can be found here: https://swcarpentry.github.io/python-novice-inflammation/code/python-novice-inflammation-code.zip
 
-During the lessons, we iteratively build an analysis script (`inflammation_analysis.ipynb`) to combine loading, analyzing, and plotting steps. This can then be extended with a for-loop, conditional statements, and defensive programming after explaining these concepts with simple examples in the hands-on coding notebook. By keeping the analysis separate, we can easily reuse it during the second day. At the end, we will refactor this analysis into separate functions and create the notebook `inflammation_analysis_refactored.ipynb` with the accompanying script `processing.py`.
+The hands-on coding thus starts with the `code/` and `data/` folder and no notebooks.   
+
+All simple examples that explain core concepts are developed in `python_part_1.ipynb` and `python_part_2.ipynb` for each day respectively. During the lessons, we iteratively build an analysis script (`inflammation_analysis.ipynb`) to combine loading, analyzing, and plotting steps. This can then be extended with a for-loop, conditional statements, and defensive programming after explaining these concepts with simple examples in the hands-on coding notebook. By keeping the analysis separate, we can easily reuse it during the second day. At the end, we will refactor this analysis into separate functions and create the notebook `inflammation_analysis_refactored.ipynb` with the accompanying script `processing.py`.
