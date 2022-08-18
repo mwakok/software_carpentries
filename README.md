@@ -5,6 +5,8 @@
 ## Content
 Collection of materials to host a Software Carpentries workshop. These materials are adaptations from the lessons provided by the [Software Carpentry](https://software-carpentry.org/lessons/)
 
+I am currently exploring the useability of [Jupyterlite](https://jupyterlite.readthedocs.io/en/latest/) either as a backup environment for participants who encounter issues with their own installation or as general workshop environments. The workshop materials can be executed through the [Jupyterlite instance](https://mwakok.github.io/software_carpentries/lab/index.html) running in this repository.
+
 ## Feedback
 Feel free to use these materials and I welcome any feedback (mistakes, suggestions) in the form of an issue.
 
