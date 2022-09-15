@@ -27,6 +27,8 @@ For online teaching, I use the following tools
 
 - Windows Terminal Preview with [split screen](https://endjin.com/blog/2020/05/5-tips-for-an-awesome-windows-terminal-experience) to show the [terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). 
 
+- [Gitautopush](https://pypi.org/project/gitautopush/) to upload the notebooks to a GitHub repository during the workshop for reference.
+
 - [Windock](https://www.ivanyu.ca/windock) for quickly managing the position, aspect ratio, and size of my windows. 
 
 - For plenary exercises, I use [polls for Zoom](https://www.howtogeek.com/674907/how-to-create-polls-in-zoom-meetings/)
