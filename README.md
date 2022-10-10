@@ -29,7 +29,7 @@ For online teaching, I use the following tools
 
 - [Git and Gitbash](https://gitforwindows.org/)
 
-- Python installation with [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- Python installation with [Anaconda](https://www.anaconda.com/products/distribution#download-section)
 
 - Windows Terminal Preview with [split screen](https://endjin.com/blog/2020/05/5-tips-for-an-awesome-windows-terminal-experience) to show the [terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). 
 
