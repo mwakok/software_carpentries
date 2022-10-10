@@ -18,6 +18,12 @@ Feel free to use these materials and I welcome any feedback (mistakes, suggestio
 - [Python lesson plan](/lesson_plans/2021_11_15_Python.md)
 - [Status of repository at time of workshop](https://github.com/mwakok/software_carpentries/tree/0.0.1)
 
+### 2022-10-17
+
+- Workshop [homepage](https://4turesearchdata-carpentries.github.io/2022-10-17-tudelft-online/)
+- [Python lesson plan](/lesson_plans/2022_10_17_Python.md)
+- [Status of repository at time of workshop]
+
 ## Tools
 For online teaching, I use the following tools
 
