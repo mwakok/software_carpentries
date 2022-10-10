@@ -12,13 +12,13 @@ Feel free to use these materials and I welcome any feedback (mistakes, suggestio
 
 ## Workshops
 
-### 2021-11-15 
+### Nov 2021 
 
 - Workshop [homepage](https://4turesearchdata-carpentries.github.io/2021-11-15-tudelft-online/)
 - [Python lesson plan](/lesson_plans/2021_11_15_Python.md)
 - [Status of repository at time of workshop](https://github.com/mwakok/software_carpentries/tree/0.0.1)
 
-### 2022-10-17
+### Oct 2022
 
 - Workshop [homepage](https://4turesearchdata-carpentries.github.io/2022-10-17-tudelft-online/)
 - [Python lesson plan](/lesson_plans/2022_10_17_Python.md)
