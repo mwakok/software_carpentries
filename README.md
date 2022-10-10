@@ -33,7 +33,7 @@ For online teaching, I use the following tools
 
 - Windows Terminal Preview with [split screen](https://endjin.com/blog/2020/05/5-tips-for-an-awesome-windows-terminal-experience) to show the [terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). 
 
-- [Gitautopush](https://pypi.org/project/gitautopush/) to upload the notebooks to a GitHub repository during the workshop for reference.
+- [Gitautopush](https://pypi.org/project/gitautopush/) to upload the notebooks to a GitHub repository during the workshop for reference. This setup requires a passsword-less ssh key.
 
 - [Windock](https://www.ivanyu.ca/windock) for quickly managing the position, aspect ratio, and size of my windows. 
 
