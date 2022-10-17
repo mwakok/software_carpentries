@@ -50,7 +50,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
-.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14496,9 +14495,6 @@ a.anchor-link {
 .reveal {
   font-size: 160%;
 }
-.reveal table {
-  font-size: var(--jp-ui-font-size1);
-}
 .reveal pre {
   width: inherit;
   padding: 0.4em;
@@ -14542,23 +14538,6 @@ div.jp-OutputPrompt {
   margin: 5px 5px 0 0;
 }
 
-.reveal div.highlight {
-  margin: 0;
-}
-
-.reveal div.highlight > pre {
-  margin: 0;
-  width: 100%;
-  font-size: var(--jp-code-font-size);
-}
-
-.reveal div.jp-OutputArea-output > pre {
-  margin: 0;
-  width: 90%;
-  font-size: var(--jp-code-font-size);
-  box-shadow: none;
-}
-
 /* Reveal navigation controls */
 
 .reveal .controls .navigate-left,
@@ -14599,14 +14578,17 @@ div.jp-OutputPrompt {
 
 /* Scrollbars */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar * {
-  background: transparent;
+::-webkit-scrollbar *
+{
+  background:transparent;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb
+{
   background: #727272 !important;
 }
 </style>
@@ -14633,12 +14615,12 @@ div.jp-OutputPrompt {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14688,6 +14670,7 @@ div.jp-OutputPrompt {
 <li>Create figure with subplots using <code>matplotlib.pyplot</code></li>
 <li>Repeat analysis in a for-loop together with <code>glob</code></li>
 </ol>
+<p>Any questions from yesterday's lesson?</p>
 <p><strong>Today</strong></p>
 <ol>
 <li>Catch suspicious datasets with conditional statements</li>
@@ -14723,7 +14706,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="6.-Creating-functions">6. Creating functions<a class="anchor-link" href="#6.-Creating-functions">&#182;</a></h1><ul>
-<li>Define a function using <code>def function_name(parameter)</code>.</li>
+<li>Define a function using <code>def function_name(parameter):</code>.</li>
 <li>The body of a function must be indented.</li>
 <li>Call a function using <code>function_name(value)</code>.</li>
 <li>Variables defined within a function can only be seen and used within the body of the function.</li>
@@ -14810,26 +14793,86 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="9.-Debugging">9. Debugging<a class="anchor-link" href="#9.-Debugging">&#182;</a></h1><p>When your tests uncovered problems or you are encountering errors, the next step is to fix them. We can set up a guide on how to approach debugging your code:</p>
-<ol>
-<li><strong>Know what your program is supposed to do.</strong> The statement <em>"it doesn't work"</em> is not very helpful, make use of the error traceback for example.</li>
-<li><strong>Test with simplified (dummy) data.</strong> Similarly to our inflammation analysis, first check your program with a single data set that you understand, before scaling up. </li>
-<li><strong>Test a simplified case.</strong>  If our program is supposed to simulate magnetic eddies in rapidly-rotating blobs of supercooled helium, our first test should be a blob of helium that isn’t rotating, and isn’t being subjected to any external electromagnetic fields.</li>
-<li><strong>Compare to an oracle.</strong> An oracle is a program, device, data set, or human being against which the results of a test can be compared.</li>
-<li><strong>Check conservation laws.</strong> Mass, energy, and other quantities are conserved in physical systems, so they should be in programs as well. Similarly, if we are analyzing patient data, the number of records should either stay the same or decrease as we move from one analysis to the next (since we might throw away outliers or records with missing values).</li>
-<li><strong>Visualize.</strong> You can spot problems with the data analysis by frequently creating simple plots.</li>
-</ol>
+<ul>
+<li><strong>Know what your program is supposed to do.</strong> <em>"My program doesn't work"</em> is not very specific: in order to diagnose and fix problems, we need to be able to tell correct output from incorrect. For example, make use of the error traceback  and document your code.</li>
+</ul>
 
 </div>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Make-it-fail-...">Make it fail ...<a class="anchor-link" href="#Make-it-fail-...">&#182;</a></h3><p><strong>Every time</strong>
-There's nothing worse than an intermittent problem: if we have to call a function a dozen times to get a single failure, the odds are good that we’ll scroll past the failure when it actually occurs.</p>
+<ul>
+<li><strong>Test with simplified (dummy) data.</strong> Similarly to our inflammation analysis, first check your program with a single data set that you understand, before scaling up. </li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Test a simplified case.</strong>  If our program is supposed to simulate magnetic eddies in rapidly-rotating blobs of supercooled helium, our first test should be a blob of helium that isn’t rotating, and isn’t being subjected to any external electromagnetic fields.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Compare to an oracle.</strong> A test oracle is something whose results are trusted, such as experimental data, an older program, or human being against which the results of a test can be compared.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Check conservation laws.</strong> Mass, energy, and other quantities are conserved in physical systems, so they should be in programs as well. Similarly, if we are analyzing patient data, the number of records should either stay the same or decrease as we move from one analysis to the next (since we might throw away outliers or records with missing values).</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Visualize.</strong> You can spot problems with the data analysis by frequently creating simple plots. This should only be used for debugging as a last resort, though, since it’s very hard to compare two visualizations automatically.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Make-it-fail-...">Make it fail ...<a class="anchor-link" href="#Make-it-fail-...">&#182;</a></h3><p><strong>Every time</strong><br>
+There's nothing worse than an intermittent problem: if we have to call a function a dozen times to get a single failure, odds are that we’ll scroll past the failure when it actually occurs.</p>
 <ul>
 <li>Check the environment: correct folder, correct data, correct parameters, correct installed libraries, ...</li>
 </ul>
@@ -14848,8 +14891,23 @@ There's nothing worse than an intermittent problem: if we have to call a functio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Change-one-thing-at-a-time">Change one thing at a time<a class="anchor-link" href="#Change-one-thing-at-a-time">&#182;</a></h3><p>Replacing random chunks of code is unlikely to do much good. (After all, if you got it wrong the first time, you’ll probably get it wrong the second and third as well.) Good programmers therefore <em>change one thing at a time, for a reason</em>.</p>
+<ul>
+<li>Gather more information: "Is the bug still there?"</li>
+<li>Test a fix: "Can we make the bug go away?"</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Keep-track-of-what-you've-done">Keep track of what you've done<a class="anchor-link" href="#Keep-track-of-what-you've-done">&#182;</a></h3><p>Good scientists keep track of what they’ve done so that they can reproduce their work. People are more likely to listen to us when we can explain clearly what we did, and we’re better able to give them the information they need.</p>
-<p>Version control is often used to reset software to a known state during debugging, and to explore recent changes to code that might be responsible for bugs.</p>
+<p>Version control is often used to reset software to a known state during debugging, and to explore recent changes to code that might be responsible for bugs. More on this during tomorrow's lesson!</p>
 
 </div>
 </div>
@@ -14887,7 +14945,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Be-Humble">Be Humble<a class="anchor-link" href="#Be-Humble">&#182;</a></h2><p>Dealing with bugs can be frustrating. However, if we can’t find a bug in 10 minutes, we should be humble and ask for help. Explaining the problem to someone else is often useful, since hearing what we’re thinking helps us spot inconsistencies and hidden assumptions. In the absence of a colleague, employ <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubberducking</a>.</p>
+<h2 id="Be-Humble">Be Humble<a class="anchor-link" href="#Be-Humble">&#182;</a></h2><p>Dealing with bugs can be frustrating. However, if we can’t find a bug in 10 minutes, we should be humble and ask for help. Explaining the problem to someone else is often very useful, since hearing what we’re thinking helps us spot inconsistencies and hidden assumptions. In the absence of a colleague, employ <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubberducking</a>.</p>
 <p>Part of being humble is learning from our mistakes.</p>
 <blockquote><p><em>An expert is a man who has made all the mistakes that can be made in a very narrow field.</em><br>
 Niels Bohr</p>
