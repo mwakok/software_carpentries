@@ -33,13 +33,31 @@ For online teaching, I use the following tools
 
 - Windows Terminal Preview with [split screen](https://endjin.com/blog/2020/05/5-tips-for-an-awesome-windows-terminal-experience) to show the [terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). 
 
-- [Gitautopush](https://pypi.org/project/gitautopush/) to upload the notebooks to a GitHub repository during the workshop for reference. This setup requires a passsword-less ssh key.
+- [Gitautopush](https://pypi.org/project/gitautopush/) to upload the notebooks to a GitHub repository during the workshop for reference. This setup requires a passsword-less ssh key. For more details, see below.
 
 - [Windock](https://www.ivanyu.ca/windock) for quickly managing the position, aspect ratio, and size of my windows. 
 
 - For plenary exercises, I use [polls for Zoom](https://www.howtogeek.com/674907/how-to-create-polls-in-zoom-meetings/)
 
 - To control my webcam background, I pipe a virtual webcam from [XSplit VCam](https://www.xsplit.com/vcam) into [OBS](https://obsproject.com/), ensuring consistent backgrounds across various online meeting programs (Teams, Zoom, Skype) 
+
+### Setup gitautopush
+During the workshop, I want to provide a link to a copy of notebooks I develop as part of hands-on teaching. This allows the participants to look up past commands and quickly rejoin the session after getting stuck, without having access to all the lesson material. The most practial solution I settled on is [gitautopush](https://pypi.org/project/gitautopush/). `gitautopush` lets you automatically track the latest changes to a git repository, and automatically push them to GitHub. You can then ask the particiapants to visit the GitHub url with the notebook, and they will be able to see any changes that you've made.
+
+**Steps**
+1. Create a passwordless ssh-key for github. Create a new rsa ssh-key called `id_rsa_open` (leave password empty), add the key to GitHub, and then add the following lines to `./ssh/config`:
+
+    ```
+    Host github.com
+        HostName github.com
+        IdentityFile ~/.ssh/id_rsa_open
+    ```
+
+2. Install `gitautopush` in the conda environment you use for teaching.
+
+3. Create a new branch in the repository you want to upload the changes to. In my case, I use a `notes` branch in the repository that contains the [learner materials](https://github.com/mwakok/software_carpentry_learner).
+
+4. Run gitautopush in the local (git) folder you will use for teaching with `gitautopush .`. Minimize the terminal to run it in the background.
 
 ## License
 
