@@ -23,7 +23,7 @@ Feel free to use these materials and I welcome any feedback (mistakes, suggestio
 ### Oct 2022
 
 - Workshop [homepage](https://4turesearchdata-carpentries.github.io/2022-10-17-tudelft-online/)
-- [Python lesson plan](/lesson_plans/2022_10_17_Python.md)
+- Python lesson plan [day 1](/lesson_plans/2022_10_17_Python1.md) [day 2](/lesson_plans/2022_10_18_Python2.md)
 - [Status of repository at time of workshop]
 
 ## Tools
