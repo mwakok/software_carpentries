@@ -87,7 +87,7 @@ During the workshop, I want to provide a link to a copy of the notebooks I devel
     Minimize the terminal to run it in the background. For more details, visit the [gitautopush documentation](https://github.com/choldgraf/gitautopush).
 
 ### Sharing terminal history with gitautopush
-If your lesson requires you to upload your executed terminal commands with gitautopush, we will need to adjust the settings for [displaying the terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). 
+If your lesson requires you to upload your executed terminal commands with gitautopush, we will need to adjust the settings for [displaying the terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). Credits go to [Giordano Lipari (@wmotion)](https://github.com/wmotion) for this solution.
 
 1. Follow steps 1-2 in the [gitautopush setup](#set-up-gitautopush).
 2. Create a new git repository separate from your working directory and create the file `command_history.txt`. We will pipe your command history to this file.
@@ -105,7 +105,7 @@ If your lesson requires you to upload your executed terminal commands with gitau
     tail -n 0 -f ~/.bash_history | tee $FILE
     ```
 
-    In addition to displaying the command history, all commands will be written to `command_history.txt`. If needed, you can use `tee -a $FILE` to append to `command_history.txt` instead of overwriting the file.
+    In addition to displaying the command history, all commands will be written to `command_history.txt`. If needed, you can use `tee -a $FILE` to append to `command_history.txt` instead of overwriting the file. 
 
 5. Start `gitautopush` in the repository containing `command_history.txt`. Ensure that you have enabled the ssh-agent for single sign-on. You can now commit and push all changes to the command history to your GitHub repository.
 
