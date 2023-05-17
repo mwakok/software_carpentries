@@ -102,7 +102,7 @@ If your lesson requires you to upload your executed terminal commands with gitau
 
     ```    
     FILE="<path-to-command_history.txt>"
-    tail -n 0 -f ~/.bash_history | tee -a $FILE
+    tail -n 0 -f ~/.bash_history | tee $FILE
     ```
 
     In addition to displaying the command history, all commands will be written to `command_history.txt`. If needed, you can use `tee -a $FILE` to append to `command_history.txt` instead of overwriting the file.
