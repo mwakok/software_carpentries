@@ -67,7 +67,7 @@ During the workshop, I want to provide a link to a copy of the notebooks I devel
 
         to add the `id_rsa` private key (replace ssh-key name for other keys if needed). You will get prompted for your password, and after providing this, no further password prompts are required for the provided key **during this terminal session**.
 
-    - **(If all else fails)** You can create a passwordless ssh-key for GitHub. Create a new rsa ssh-key called `id_rsa_open`, leaving the passwork blank, and [add the key to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Then, configure ssh to use this IdentityFile by adding the following lines to `./ssh/config` (create the file if it doesn't exist yet):
+    - **(If all else fails)** You can create a passwordless ssh-key for GitHub. Create a new rsa ssh-key called `id_rsa_open`, leaving the password blank, and [add the key to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Then, configure ssh to use this key by adding the following lines to `~/.ssh/config` (create the file if it doesn't exist yet):
 
         ```
         Host github
@@ -75,24 +75,25 @@ During the workshop, I want to provide a link to a copy of the notebooks I devel
             IdentityFile ~/.ssh/id_rsa_open
         ```
 
-        As password-less ssh-keys are a security risk, make sure to change the IdentityFile to your regular ssh-key.
+        As passwordless ssh-keys are a security risk, make sure to change the IdentityFile to your regular ssh-key and delete the key after teaching.
 
 3. Either create a new repository (local and online) or create a new branch in the repository you want to upload the changes to. In my case, I use a `notes` branch in the repository that contains the [learner materials](https://github.com/mwakok/software_carpentry_learner). Note that `gitautopush` requires that the repository has at least a single previous push. 
 
-4. In the same terminal you set up the ssh-agent, run `gitautopush` in the local (git) folder you will use for teaching by executing  
+4. In the same terminal you set up the ssh-agent, run `gitautopush` in the local (git) folder you will use for teaching, by executing  
 
     ```
     gitautopush .
     ```
     Minimize the terminal to run it in the background. For more details, visit the [gitautopush documentation](https://github.com/choldgraf/gitautopush).
 
+
 ### Sharing terminal history with gitautopush
-If your lesson requires you to upload your executed terminal commands with gitautopush, we will need to adjust the settings for [displaying the terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). Credits go to [Giordano Lipari (@wmotion)](https://github.com/wmotion) for this solution.
+If your lesson requires you to upload your executed terminal commands with `gitautopush`, we will need to adjust the settings for [displaying the terminal history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). Credits go to [Giordano Lipari (@wmotion)](https://github.com/wmotion) for this solution.
 
 1. Follow steps 1-2 in the [gitautopush setup](#set-up-gitautopush).
 2. Create a new git repository separate from your working directory and create the file `command_history.txt`. We will pipe your command history to this file.
 3. Commit and push your (empty) file to a GitHub repository.
-4. Next, we will set up your two terminals to [display the command history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). In a **new(!)** terminal, set up your terminal to store the each command in the history by executing
+4. Next, we will set up two new terminals to [display the command history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). In a **new(!)** terminal, set up your terminal to store each command in the history by executing
 
     ```{bash}
     export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
