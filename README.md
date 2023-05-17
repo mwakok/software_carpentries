@@ -92,22 +92,22 @@ If your lesson requires you to upload your executed terminal commands with gitau
 1. Follow steps 1-2 in the [gitautopush setup](#set-up-gitautopush).
 2. Create a new git repository separate from your working directory and create the file `command_history.txt`. We will pipe your command history to this file.
 3. Commit and push your (empty) file to a GitHub repository.
-4. Next, we will set up your two terminals to [display the command history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). In a **new(!)** terminal, set up your terminal to  by executing
+4. Next, we will set up your two terminals to [display the command history](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). In a **new(!)** terminal, set up your terminal to store the each command in the history by executing
 
     ```{bash}
     export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
     ```
 
-    Then, in a new terminal (or horizontal terminal split in Windows Terminal Preview), execute
+    Then, in a second terminal (or horizontal terminal split in Windows Terminal Preview), execute
 
     ```    
     FILE="<path-to-command_history.txt>"
-    tail -n 0 -f ~/.bash_history | tee $FILE
+    tail -n 0 -f ~/.bash_history | tee -a $FILE
     ```
 
-    In addition to displaying the command history, each command is appended to `command_history.txt`. 
+    In addition to displaying the command history, all commands will be written to `command_history.txt`. If needed, you can use `tee -a $FILE` to append to `command_history.txt` instead of overwriting the file.
 
-5. Start `gitautopush` in the repository containing `command_history.txt`. Ensure that you have enabled the ssh-agent for single sign-on. You will now commit and push all changes to the command history to your GitHub repository.
+5. Start `gitautopush` in the repository containing `command_history.txt`. Ensure that you have enabled the ssh-agent for single sign-on. You can now commit and push all changes to the command history to your GitHub repository.
 
 ## License
 This work is licensed under a
